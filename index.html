@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;family=Gochi+Hand&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"><script src="./image-slot.js"></script><style>body{margin:0;background:#E2DFD2;font-family:Figtree,system-ui,sans-serif;color:#1F2414;-webkit-font-smoothing:antialiased}a{color:#3D4A1C}a:hover{color:#1F2414}*{box-sizing:border-box}button{font-family:inherit}</style></helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 32px 16px; position: absolute; left: 137px; top: -28px">
+  <div style="width:390px;height:844px;border-radius:56px;background:#141611;padding:11px;box-shadow:0 30px 60px -20px rgba(30,35,20,.45),0 0 0 1px rgba(0,0,0,.2);flex:none">
+    <div style="position:relative;width:100%;height:100%;border-radius:46px;overflow:hidden;background:#EFEDE1;touch-action:none;user-select:none">
+      <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:118px;height:34px;border-radius:20px;background:#141611;z-index:50"></div>
+      <div style="position:absolute;top:0;left:0;right:0;height:52px;display:flex;align-items:center;justify-content:space-between;padding:4px 30px 0 34px;font:600 15px Figtree;z-index:40;color:#1F2414"><span>9:41</span><span style="display:flex;gap:5px;align-items:center"><span style="width:17px;height:10px;border-radius:2px;background:#1F2414;opacity:.85"></span><span style="width:24px;height:11px;border-radius:3px;border:1.5px solid #1F2414;padding:1px"><span style="display:block;width:70%;height:100%;background:#1F2414;border-radius:1px"></span></span></span></div>
+
+      <sc-if value="{{ isOnb0 }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute;inset:0;background:#E4E8A8;overflow:hidden">
+          <div style="position:absolute;top:92px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:9px">
+            <svg width="30" height="18" viewBox="0 0 30 18"><path d="M3 17a12 12 0 0 1 24 0" fill="none" stroke="#F06A2A" stroke-width="3.2" stroke-linecap="round"></path><path d="M8 17a7 7 0 0 1 14 0" fill="none" stroke="#7C6BEA" stroke-width="3.2" stroke-linecap="round"></path><path d="M13 17a2 2 0 0 1 4 0" fill="none" stroke="#3D4A1C" stroke-width="3.2" stroke-linecap="round"></path></svg>
+            <span style="font:800 19px Figtree;letter-spacing:-.02em;color:#1F2414">riding the rainbow</span>
+          </div>
+          
+          <sc-if value="{{ showHints }}" hint-placeholder-val="{{ true }}">
+            <div style="position:absolute;top:198px;right:-16px;display:flex;align-items:center;gap:8px;height:38px;padding:0 28px 0 12px;border-radius:19px;background:#FBFAF5;border:1.5px solid #1F2414;box-shadow:2px 2px 0 #1F2414;font:17px 'Gochi Hand';letter-spacing:.06em;text-transform:uppercase;color:#1F2414"><span style="width:16px;height:16px;border-radius:8px;border:1.5px solid #1F2414;display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-radius:3px;background:#1F2414"></span></span>Città Studi</div>
+            <svg style="position:absolute;top:236px;right:0" width="120" height="62" viewBox="0 0 120 62" fill="none" stroke="#1F2414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M120 4 L100 6 C92 8 94 18 84 22 L58 32 L64 42 L88 42 L100 54 L120 56"></path></svg>
+          </sc-if>
+          <div style="position: absolute; top: 284px; left: 26px; right: 26px; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center">
+            
+            <h1 style="margin:0;font:700 35px/1.13 Figtree;letter-spacing:-.02em;color:#1F2414;text-wrap:balance">Bikes, toys and books from neighbours, for kids who just arrived</h1><p style="margin:0;font:18px 'Gochi Hand';letter-spacing:.12em;text-transform:uppercase;color:#3D4A1C">free, from neighbour to neighbour</p>
+          </div>
+          <sc-if value="{{ showHints }}" hint-placeholder-val="{{ true }}">
+            <div style="position: absolute; top: 559px; left: -12px; transform: rotate(-3deg); background: #FBFAF5; border: 1.5px solid #1F2414; box-shadow: 2px 2px 0 #1F2414; border-radius: 6px; padding: 10px 18px 10px 24px; font: 15px/1.35 'Gochi Hand'; letter-spacing: .08em; text-transform: uppercase; color: #1F2414">Giulia is giving away<br>a 20″ bike<span style="position:absolute;top:-16px;right:-14px"><svg width="30" height="30" viewBox="0 0 28 28"><polygon points="14,1 16,9 23,5 19,12 27,14 19,16 23,23 16,19 14,27 12,19 5,23 9,16 1,14 9,12 5,5 12,9" fill="#F06A2A"></polygon></svg></span></div>
+            <div style="position: absolute; top: 628px; left: 57px; transform: rotate(-3deg); background: #FBFAF5; border: 1.5px solid #1F2414; border-radius: 6px; padding: 3px 10px; font: 14px 'Gochi Hand'; letter-spacing: .08em; text-transform: uppercase; color: #1F2414">1.2 km away</div>
+            
+          </sc-if>
+          <div style="position:absolute;left:24px;right:24px;bottom:34px;display:flex;flex-direction:column;gap:12px">
+            <button onClick="{{ next }}" style="height:56px;border:0;border-radius:28px;background:#3D4A1C;color:#F3F5DC;font:700 17px Figtree;cursor:pointer" style-active="transform:scale(.98)">Get started</button>
+            <p style="margin:0;text-align:center;font:500 13px/1.4 Figtree;color:#3D4A1C">With local partners and volunteer ambassadors</p>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isOnb1 }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:70px 24px 34px">
+          <div style="display:flex;align-items:center;height:40px"><button onClick="{{ back }}" style="width:40px;height:40px;border-radius:20px;border:0;background:#E3E0D1;font:600 18px Figtree;cursor:pointer;color:#1F2414">←</button></div>
+          <h2 style="margin:26px 0 6px;font:700 30px/1.1 Figtree;letter-spacing:-.02em;text-wrap:balance">How will you use Riding the Rainbow?</h2>
+          <p style="margin:0 0 24px;font:500 15px/1.4 Figtree;color:#5B604C">Everything is free. You can switch later in your profile.</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <button onClick="{{ role.need }}" style="display:flex;align-items:center;gap:16px;padding:14px 18px 14px 14px;border-radius:22px;border:1.5px solid #D9D6C6;background:#FBFAF5;cursor:pointer;text-align:left;color:#1F2414" style-active="transform:scale(.98)"><img src="icons/role-need.png" alt="" style="width:76px;height:76px;object-fit:contain;flex:none"><span style="display:flex;flex-direction:column;gap:4px;flex:1;min-width:0"><span style="font:700 19px Figtree;letter-spacing:-.01em">I need help</span><span style="font:500 14px/1.35 Figtree;color:#5B604C">Find bikes, toys, books and clothes for my children.</span></span><svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="#1F2414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M2 2l6 6-6 6"></path></svg></button>
+            <button onClick="{{ role.give }}" style="display:flex;align-items:center;gap:16px;padding:14px 18px 14px 14px;border-radius:22px;border:1.5px solid #D9D6C6;background:#FBFAF5;cursor:pointer;text-align:left;color:#1F2414" style-active="transform:scale(.98)"><img src="icons/role-donor.png" alt="" style="width:76px;height:76px;object-fit:contain;flex:none"><span style="display:flex;flex-direction:column;gap:4px;flex:1;min-width:0"><span style="font:700 19px Figtree;letter-spacing:-.01em">I can help</span><span style="font:500 14px/1.35 Figtree;color:#5B604C">Donate things, deliver as a volunteer or become an ambassador.</span></span><svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="#1F2414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M2 2l6 6-6 6"></path></svg></button>
+            <button onClick="{{ role.org }}" style="display:flex;align-items:center;gap:16px;padding:14px 18px 14px 14px;border-radius:22px;border:1.5px solid #D9D6C6;background:#FBFAF5;cursor:pointer;text-align:left;color:#1F2414" style-active="transform:scale(.98)"><img src="icons/role-org.png" alt="" style="width:76px;height:76px;object-fit:contain;flex:none"><span style="display:flex;flex-direction:column;gap:4px;flex:1;min-width:0"><span style="font:700 19px Figtree;letter-spacing:-.01em">Organization</span><span style="font:500 14px/1.35 Figtree;color:#5B604C">Reception centres, schools, associations and partner shops.</span></span><svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="#1F2414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M2 2l6 6-6 6"></path></svg></button>
+          </div>
+          <sc-if value="{{ roleNote }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:16px 0 0;text-align:center;font:17px 'Gochi Hand';letter-spacing:.06em;text-transform:uppercase;color:#7C6BEA">this prototype shows the family flow</p>
+          </sc-if>
+          <sc-if value="{{ ageAsk }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;inset:0;z-index:45;background:rgba(31,36,20,.4);display:flex;align-items:flex-end">
+              <div style="width:100%;background:#EFEDE1;border-radius:32px 32px 0 0;padding:26px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+                <img src="icons/hug.png" alt="" style="width:72px;height:72px;object-fit:contain">
+                <h3 style="margin:6px 0 0;font:700 25px/1.15 Figtree;letter-spacing:-.02em">Are you 18 or older?</h3>
+                <p style="margin:0 0 12px;font:500 15px/1.4 Figtree;color:#5B604C;text-wrap:pretty">Requests are made by a parent or guardian. Donors only see your first name.</p>
+                <sc-if value="{{ underage }}" hint-placeholder-val="{{ false }}">
+                  <p style="margin:0 0 10px;font:600 14px/1.4 Figtree;color:#B8501E">Please ask a parent, guardian or your reception centre to sign up for you.</p>
+                </sc-if>
+                <button onClick="{{ ageYes }}" style="width:100%;height:56px;border:0;border-radius:28px;background:#3D4A1C;color:#F3F5DC;font:700 17px Figtree;cursor:pointer">Yes, I'm 18 or older</button>
+                <button onClick="{{ ageNo }}" style="width:100%;height:52px;border:1.5px solid #C9C6B5;border-radius:26px;background:transparent;color:#1F2414;font:700 16px Figtree;cursor:pointer">No</button>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isOnb2 }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:70px 24px 34px">
+          <div style="display:flex;align-items:center;justify-content:space-between;height:40px">
+            <button onClick="{{ back }}" style="width:40px;height:40px;border-radius:20px;border:0;background:#E3E0D1;font:600 18px Figtree;cursor:pointer;color:#1F2414">←</button>
+            <span></span>
+            <span style="width:40px"></span>
+          </div>
+          <svg style="position:absolute;top:110px;right:-22px" width="80" height="86" viewBox="0 0 104 112"><line x1="50" y1="30" x2="50" y2="6" stroke="#7C6BEA" stroke-width="4"></line><path d="M50 4 L70 10 L50 17 Z" fill="#7C6BEA"></path><path d="M4 108 L50 26 L98 108 Z" fill="#7C6BEA"></path><path d="M40 108 V86 a10 10 0 0 1 20 0 V108 Z" fill="#EFEDE1"></path></svg>
+          <h2 style="margin:26px 0 6px;padding-right:60px;font:700 30px/1.1 Figtree;letter-spacing:-.02em">How do you want to get things?</h2>
+          <p style="margin:0 0 22px;font:500 15px/1.4 Figtree;color:#5B604C">You can change this for every request.</p>
+          <div style="display:flex;align-items:center;gap:12px;height:56px;padding:0 18px;border-radius:18px;background:#FBFAF5;border:1.5px solid #D9D6C6;margin-bottom:18px">
+            <span style="width:12px;height:12px;border-radius:6px;background:#F06A2A"></span>
+            <span style="font:600 16px Figtree;flex:1">Milan, Città Studi</span>
+            <span style="font:500 14px Figtree;color:#5B604C">within 5 km</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ deliveryOpts }}" as="o" hint-placeholder-count="2">
+              <button onClick="{{ o.pick }}" style="display:flex;gap:14px;align-items:flex-start;text-align:left;padding:18px;border-radius:20px;border:1.5px solid {{ o.border }};background:{{ o.bg }};cursor:pointer;color:#1F2414">
+                <span style="flex:none;width:22px;height:22px;border-radius:11px;border:2px solid #3D4A1C;display:flex;align-items:center;justify-content:center;margin-top:1px"><span style="width:10px;height:10px;border-radius:5px;background:{{ o.dot }}"></span></span>
+                <span style="display:flex;flex-direction:column;gap:4px"><span style="font:700 17px Figtree">{{ o.title }}</span><span style="font:500 14px/1.4 Figtree;color:#5B604C">{{ o.sub }}</span></span>
+              </button>
+            </sc-for>
+          </div>
+          <div style="flex:1"></div>
+          <button onClick="{{ next }}" style="height:56px;border:0;border-radius:28px;background:#3D4A1C;color:#F3F5DC;font:700 17px Figtree;cursor:pointer">Start discovering</button>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isApp }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding-top:56px">
+          <sc-if value="{{ isDiscover }}" hint-placeholder-val="{{ true }}">
+            <div style="flex:1;display:flex;flex-direction:column;min-height:0">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 22px 0">
+                <div style="display:flex;flex-direction:column;gap:2px"><h1 style="margin:0;font:800 30px Figtree;letter-spacing:-.025em">Discover</h1><span style="display:flex;align-items:center;gap:6px;font:600 13px Figtree;color:#5B604C"><span style="width:7px;height:7px;border-radius:4px;background:#F06A2A"></span>Città Studi · 5 km</span></div>
+                <div style="display:flex;align-items:center;gap:8px"><sc-if value="{{ isCards }}" hint-placeholder-val="{{ true }}"><button onClick="{{ undo }}" aria-label="Undo last swipe" style="width:34px;height:34px;border-radius:17px;border:1px solid #D9D6C6;background:#FBFAF5;cursor:pointer;opacity:{{ undoOp }};display:flex;align-items:center;justify-content:center;padding:0"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#1F2414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h9a4 4 0 0 1 0 8H8"></path><path d="M7 4L3 8l4 4"></path></svg></button></sc-if><div style="display:flex;padding:3px;border-radius:19px;background:#E3E0D1"><button onClick="{{ view.cards.pick }}" aria-label="Cards" style="width:38px;height:32px;border-radius:16px;border:0;background:{{ view.cards.bg }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="18" height="18" viewBox="0 0 26 26" fill="none" stroke="#1F2414" stroke-width="2.2" stroke-linejoin="round"><rect x="5" y="4" width="13" height="17" rx="3" transform="rotate(-8 11 12)"></rect><rect x="9" y="5" width="13" height="17" rx="3" fill="{{ view.cards.bg }}"></rect></svg></button><button onClick="{{ view.map.pick }}" aria-label="Map" style="width:38px;height:32px;border-radius:16px;border:0;background:{{ view.map.bg }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F2414" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"></path><path d="M9 4v13.5M15 6.5V20"></path></svg></button></div></div>
+              </div>
+              <div style="display:flex;gap:7px;padding:14px 22px 2px;overflow-x:auto;scrollbar-width:none;flex:none">
+                <sc-for list="{{ filterChips }}" as="f" hint-placeholder-count="5">
+                  <button onClick="{{ f.pick }}" style="flex:none;height:38px;padding:0 14px 0 {{ f.pl }};display:flex;align-items:center;gap:6px;border-radius:19px;border:1.5px solid {{ f.border }};background:{{ f.bg }};color:#1F2414;font:600 14px Figtree;cursor:pointer"><sc-if value="{{ f.icon }}" hint-placeholder-val="{{ false }}"><img src="{{ f.icon }}" alt="" style="width:24px;height:24px;object-fit:contain"></sc-if>{{ f.label }}</button>
+                </sc-for>
+              </div>
+              <sc-if value="{{ isCards }}" hint-placeholder-val="{{ true }}">
+              <div style="position:relative;flex:1;margin:16px 18px 22px">
+                <sc-if value="{{ deckEmpty }}" hint-placeholder-val="{{ false }}">
+                  <div style="position:absolute;inset:0;border-radius:28px;border:2px dashed #C9C6B5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:30px;text-align:center">
+                    <div style="font:22px 'Gochi Hand';color:#7C6BEA">that's all for now!</div>
+                    <div style="font:700 22px/1.2 Figtree">New donations arrive every day</div>
+                    <div style="font:500 14px/1.4 Figtree;color:#5B604C">{{ requestCountLabel }}</div>
+                    <button onClick="{{ resetDeck }}" style="margin-top:6px;height:46px;padding:0 22px;border-radius:23px;border:0;background:#3D4A1C;color:#F3F5DC;font:700 15px Figtree;cursor:pointer">Look again</button>
+                  </div>
+                </sc-if>
+                <sc-for list="{{ cards }}" as="c" hint-placeholder-count="3">
+                  <div onPointerDown="{{ c.onDown }}" style="position:absolute;inset:0;z-index:{{ c.z }};transform:{{ c.tf }};transform-origin:50% 100%;transition:{{ c.tr }};filter:{{ c.flt }};border-radius:28px;background:#FBFAF5;box-shadow:{{ c.shadow }};overflow:hidden;display:flex;flex-direction:column;cursor:grab;touch-action:none">
+                    <div style="position:relative;flex:1;background:#E3E0D1">
+                      <image-slot id="{{ c.slotId }}" src="{{ c.photo }}" credit="{{ c.credit }}" credit-href="{{ c.creditHref }}" shape="rect" placeholder="Drop a photo" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
+                      <div style="position:absolute;top:14px;left:14px;display:flex;gap:6px;pointer-events:none">
+                        <span style="height:26px;display:flex;align-items:center;padding:0 10px;border-radius:13px;background:#DDE59B;font:700 12px Figtree;color:#1F2414">{{ c.cond }}</span>
+                        <span style="height:26px;display:flex;align-items:center;padding:0 10px;border-radius:13px;background:#FBFAF5;font:700 12px Figtree;color:#1F2414">{{ c.age }}</span>
+                      </div>
+                      <div style="position:absolute;top:56px;left:16px;pointer-events:none;transform:rotate(-8deg);opacity:{{ c.yesOp }};background:#3D4A1C;color:#E4E8A8;border-radius:10px;padding:8px 14px;font:800 15px Figtree;letter-spacing:.1em">INTERESTED</div>
+                      <div style="position:absolute;top:56px;right:16px;pointer-events:none;transform:rotate(8deg);opacity:{{ c.noOp }};background:#F06A2A;color:#fff;border-radius:10px;padding:8px 14px;font:800 15px Figtree;letter-spacing:.1em">SKIP</div>
+                    </div>
+                    <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px">
+                      <div style="font:700 22px/1.15 Figtree;letter-spacing:-.015em">{{ c.title }}</div>
+                      <div style="font:500 14px Figtree;color:#5B604C">{{ c.donor }} · {{ c.dist }}</div>
+                      <div style="font:500 14px/1.4 Figtree;color:#1F2414">{{ c.note }}</div>
+                      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:4px">
+                        <sc-for list="{{ c.tags }}" as="t" hint-placeholder-count="1">
+                          <span style="height:26px;display:flex;align-items:center;gap:6px;padding:0 10px;border-radius:13px;border:1px solid #D9D6C6;font:600 12px Figtree;color:#3D4A1C"><span style="width:6px;height:6px;border-radius:3px;background:#7C6BEA"></span>{{ t }}</span>
+                        </sc-for>
+                      </div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:center;gap:36px;padding:6px 0 14px;position:relative;z-index:20">
+                <button onClick="{{ swipeNo }}" aria-label="Skip" style="width:66px;height:66px;border-radius:33px;border:1px solid #D9D6C6;background:#FBFAF5;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px -8px rgba(40,45,25,.35)" style-active="transform:scale(.93)"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1F2414" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l12 12M17 5L5 17"></path></svg></button>
+                <button onClick="{{ swipeYes }}" aria-label="Request" style="width:66px;height:66px;border-radius:33px;border:0;background:#3D4A1C;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px -8px rgba(40,45,25,.5)" style-active="transform:scale(.93)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E4E8A8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></button>
+                
+              </div>
+              </sc-if>
+              <sc-if value="{{ isMap }}" hint-placeholder-val="{{ false }}">
+                <div onClick="{{ closePin }}" style="position:relative;flex:1;margin:14px 0 0;overflow:hidden;background:#EDEBE4">
+                  <div style="position:absolute;left:50%;top:50%;width:384px;height:640px;transform:translate(-50%,-50%);display:grid;grid-template-columns:repeat(3,128px);pointer-events:none;filter:saturate(.75) sepia(.12)"><img src="https://tile.openstreetmap.org/15/17222/11723.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17223/11723.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17224/11723.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17222/11724.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17223/11724.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17224/11724.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17222/11725.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17223/11725.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17224/11725.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17222/11726.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17223/11726.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17224/11726.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17222/11727.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17223/11727.png" alt="" draggable="false" style="width:128px;height:128px;display:block"><img src="https://tile.openstreetmap.org/15/17224/11727.png" alt="" draggable="false" style="width:128px;height:128px;display:block"></div>
+                  <div style="position:absolute;left:50%;top:50%;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:60px;background:rgba(124,107,234,.12);border:1.5px solid rgba(124,107,234,.4);pointer-events:none"></div>
+                  <div style="position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:9px;background:#7C6BEA;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.25);pointer-events:none"></div>
+                  <sc-for list="{{ pins }}" as="p" hint-placeholder-count="6">
+                    <button onClick="{{ p.pick }}" aria-label="{{ p.title }}" style="position:absolute;left:{{ p.x }};top:{{ p.y }};transform:translate(-50%,-100%) scale({{ p.sc }});transform-origin:50% 100%;z-index:{{ p.z }};border:0;background:none;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;transition:transform .2s">
+                      <span style="position:relative;width:50px;height:50px;border-radius:25px;border:3px solid {{ p.ring }};background:{{ p.thumb }};box-shadow:0 6px 14px -6px rgba(31,36,20,.6);display:block"><span style="position:absolute;right:-6px;bottom:-4px;width:24px;height:24px;border-radius:12px;background:#FBFAF5;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,.2)"><img src="{{ p.icon }}" alt="" style="width:18px;height:18px;object-fit:contain"></span></span>
+                      <span style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid {{ p.ring }};margin-top:-1px"></span>
+                    </button>
+                  </sc-for>
+                  <div style="position:absolute;left:12px;top:12px;height:30px;display:flex;align-items:center;padding:0 12px;border-radius:15px;background:#FBFAF5;font:600 12px Figtree;box-shadow:0 2px 6px rgba(0,0,0,.12);pointer-events:none">{{ mapCount }}</div>
+                  <div style="position:absolute;right:6px;bottom:4px;font:500 9px Figtree;color:#5B604C;pointer-events:none">© OpenStreetMap contributors</div>
+                  <sc-if value="{{ pinOn }}" hint-placeholder-val="{{ false }}">
+                    <div onClick="{{ stop }}" style="position:absolute;left:12px;right:12px;bottom:16px;z-index:30;display:flex;gap:12px;padding:10px;border-radius:22px;background:#FBFAF5;box-shadow:0 14px 30px -12px rgba(31,36,20,.5)">
+                      <div style="width:96px;height:96px;flex:none;border-radius:16px;background:{{ pin.thumb }}"></div>
+                      <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;padding:2px 0">
+                        <span style="font:700 16px/1.2 Figtree">{{ pin.title }}</span>
+                        <span style="font:500 13px Figtree;color:#5B604C">{{ pin.donor }} · {{ pin.dist }}</span>
+                        <span style="font:600 12px Figtree;color:#3D4A1C">{{ pin.age }} · {{ pin.cond }}</span>
+                        <div style="flex:1"></div>
+                        <button onClick="{{ pin.request }}" style="height:36px;border:0;border-radius:18px;background:{{ pin.btnBg }};color:{{ pin.btnFg }};font:700 14px Figtree;cursor:pointer">{{ pin.btnLabel }}</button>
+                      </div>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-if>
+            </div>
+          </sc-if>
+          <sc-if value="{{ isRequests }}" hint-placeholder-val="{{ false }}">
+            <div style="flex:1;display:flex;flex-direction:column;padding:6px 22px 0;min-height:0;overflow:auto">
+              <h1 style="margin:0 0 4px;font:800 30px Figtree;letter-spacing:-.025em">Requests</h1>
+              <p style="margin:0 0 18px;font:500 14px Figtree;color:#5B604C">Donors reply here. A volunteer will confirm the delivery day.</p>
+              <sc-if value="{{ noRequests }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:30px 10px;text-align:center;font:20px 'Gochi Hand';color:#7C6BEA">swipe right on something you like</div>
+              </sc-if>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ requests }}" as="r" hint-placeholder-count="0">
+                  <div style="display:flex;gap:12px;align-items:center;padding:10px;border-radius:18px;background:#FBFAF5">
+                    <div style="width:58px;height:58px;border-radius:14px;flex:none;background:{{ r.thumb }};border:1.5px solid #1F2414"></div>
+                    <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:3px">
+                      <span style="font:700 15px Figtree">{{ r.title }}</span>
+                      <span style="font:500 13px Figtree;color:#5B604C">{{ r.donor }} · {{ r.dist }}</span>
+                    </div>
+                    <span style="flex:none;height:26px;display:flex;align-items:center;padding:0 10px;border-radius:13px;background:#E3E0D1;font:600 12px Figtree;color:#3D4A1C">Waiting</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ toastOn }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;left:18px;right:18px;bottom:98px;z-index:30;display:flex;align-items:center;gap:12px;padding:12px 12px 12px 18px;border-radius:18px;background:#1F2414;color:#F3F5DC;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)">
+              <span style="width:10px;height:10px;border-radius:5px;background:#DDE59B;flex:none"></span>
+              <span style="flex:1;font:600 14px/1.3 Figtree">{{ toastText }}</span>
+              <button onClick="{{ undo }}" style="height:32px;padding:0 12px;border-radius:16px;border:0;background:#3D4A1C;color:#DDE59B;font:700 13px Figtree;cursor:pointer">Undo</button>
+            </div>
+          </sc-if>
+          <div style="height:84px;flex:none;display:flex;justify-content:space-around;align-items:flex-start;padding:10px 16px 0;border-top:1px solid #DEDBCB;background:#EFEDE1">
+            <button onClick="{{ tab.discover.pick }}" style="background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;width:72px;color:{{ tab.discover.fg }};padding:0"><span style="position:relative;display:flex"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="{{ tab.discover.fg }}" stroke-width="2" stroke-linejoin="round"><rect x="5" y="4" width="13" height="17" rx="3" transform="rotate(-8 11 12)"></rect><rect x="9" y="5" width="13" height="17" rx="3" fill="{{ tab.discover.fill }}"></rect></svg></span><span style="font:600 11px Figtree">Discover</span></button>
+            <button onClick="{{ tab.requests.pick }}" style="background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;width:72px;color:{{ tab.requests.fg }};padding:0"><span style="position:relative;display:flex"><svg width="26" height="26" viewBox="0 0 26 26" fill="{{ tab.requests.fill }}" stroke="{{ tab.requests.fg }}" stroke-width="2" stroke-linejoin="round"><path d="M13 21.5s-8-4.6-8-10.4A4.4 4.4 0 0 1 13 8.4a4.4 4.4 0 0 1 8 2.7c0 5.8-8 10.4-8 10.4z"></path></svg><span style="position:absolute;top:-5px;right:-11px;min-width:18px;height:18px;border-radius:9px;background:#F06A2A;color:#fff;font:700 11px/18px Figtree;text-align:center;padding:0 4px;opacity:{{ tab.requests.badgeOp }}">{{ tab.requests.badge }}</span></span><span style="font:600 11px Figtree">Requests</span></button>
+            <button onClick="{{ tab.events.pick }}" style="background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;width:72px;color:{{ tab.events.fg }};padding:0"><span style="position:relative;display:flex"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="{{ tab.events.fg }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="18" height="16" rx="3" fill="{{ tab.events.fill }}"></rect><path d="M4 11h18M9 4v4M17 4v4"></path></svg></span><span style="font:600 11px Figtree">Events</span></button>
+            <button onClick="{{ tab.profile.pick }}" style="background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;width:72px;color:{{ tab.profile.fg }};padding:0"><span style="position:relative;display:flex"><svg width="26" height="26" viewBox="0 0 26 26" fill="{{ tab.profile.fill }}" stroke="{{ tab.profile.fg }}" stroke-width="2" stroke-linejoin="round"><circle cx="13" cy="9" r="4.5"></circle><path d="M4.5 22c1-4.5 4.4-7 8.5-7s7.5 2.5 8.5 7z"></path></svg></span><span style="font:600 11px Figtree">Profile</span></button>
+          </div>
+        </div>
+      </sc-if>
+      <div style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:#1F2414;z-index:60"></div>
+    </div>
+  </div>
+  <button onClick="{{ restart }}" style="background:none;border:0;font:600 13px Figtree;color:#5B604C;cursor:pointer;text-decoration:underline">Restart from onboarding</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startScreen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;onboarding&quot;,&quot;discover&quot;],&quot;default&quot;:&quot;onboarding&quot;,&quot;tsType&quot;:&quot;'onboarding'|'discover'&quot;},&quot;showHints&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Style&quot;},&quot;threshold&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:50,&quot;max&quot;:180,&quot;step&quot;:10,&quot;unit&quot;:&quot;px&quot;,&quot;default&quot;:100,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Swipe&quot;}}">
+const U = id => `https://images.unsplash.com/photo-${id}?w=900&q=70&auto=format&fit=crop`;
+const P = (id, name, handle) => ({ photo: U(id), credit: `Photo by ${name} on Unsplash`, creditHref: `https://unsplash.com/@${handle}` });
+const ITEMS = [
+  { id: 1, cat: 'Bikes', title: "Kids' bike 20″, blue", age: 'Ages 6–9', cond: 'Like new', donor: 'Giulia', dist: '1.2 km', note: 'My daughter outgrew it this summer. Bell and stand included.', tags: ['Volunteer delivery', 'Checked by partner shop'], ...P('1629056007607-f3e5de821891', 'Tholaal Mohamed', 'tholaal_mohamed') },
+  { id: 2, cat: 'Toys', title: 'Wooden animal set', age: 'Ages 1–4', cond: 'Good', donor: 'Marco', dist: '2.4 km', note: 'Twelve hand-painted animals in a cloth bag.', tags: ['Pick up only'], ...P('1714618888538-8d15a9228236', 'NAM CZ', 'czon00') },
+  { id: 3, cat: 'Bikes', title: "Kids' bike 16″, pink", age: 'Ages 4–7', cond: 'Good', donor: 'Sara', dist: '0.8 km', note: 'Front basket and new inner tubes.', tags: ['Volunteer delivery'], ...P('1696390015881-87746fa8f85f', 'Bogdan Arhipov', 'stul') },
+  { id: 4, cat: 'Books', title: 'Picture books, set of 8', age: 'Ages 3–6', cond: 'Like new', donor: 'Elena', dist: '3.1 km', note: 'Mixed English and Ukrainian, plus two in Arabic.', tags: ['Volunteer delivery'], ...P('1455884981818-54cb785db6fc', 'Annie Spratt', 'anniespratt') },
+  { id: 5, cat: 'Clothes', title: 'Clothes bundle, age 3–4', age: 'Size 98–104', cond: 'Good', donor: 'Luca', dist: '1.9 km', note: 'Shirts, trousers and a warm jumper. Washed and ironed.', tags: ['Pick up only'], ...P('1622218286192-95f6a20083c7', 'Markus Spiske', 'markusspiske') },
+  { id: 6, cat: 'Bikes', title: 'BMX 20″', age: 'Ages 8–12', cond: 'Serviced', donor: 'Ciclofficina Lambrate', dist: '2.7 km', note: 'New brakes and tyres. Comes with a helmet and lights.', tags: ['Partner hub', 'Helmet included'], ...P('1577223438653-589ba8de2baf', 'Nelson Ndongala', 'whodunelson') },
+  { id: 7, cat: 'Toys', title: 'Building bricks, big box', age: 'Ages 5+', cond: 'Complete', donor: 'Anna', dist: '4.0 km', note: 'About 900 pieces with the idea booklet.', tags: ['Volunteer delivery'], ...P('1600987608520-29713f8cc23e', 'Jacek Pobłocki', 'dabah') },
+  { id: 8, cat: 'Bikes', title: "Kids' bike 14″", age: 'Ages 3–5', cond: 'Good', donor: 'Paolo', dist: '1.5 km', note: 'Light frame, an easy first pedal bike.', tags: ['Pick up only'], ...P('1724038872521-268d94826c94', 'Hiboy', 'hiboyofficial') },
+  { id: 9, cat: 'Clothes', title: 'Long-sleeve dresses, 3 pcs', age: 'Size 92–98', cond: 'Like new', donor: 'Fatima', dist: '2.2 km', note: 'Soft cotton, worn only a few times.', tags: ['Volunteer delivery'], ...P('1560506840-ec148e82a604', 'Baby Natur', 'babynatur') }
+];
+ITEMS.forEach(i => { i.thumb = `url("${i.photo}") center/cover`; i.slotId = 'item-' + i.id; });
+const AGES = [['0–3', 20], ['4–6', 26], ['7–9', 32], ['10–12', 38], ['13+', 44]];
+const CAT_ICON = { Bikes: 'icons/bike.png', Toys: 'icons/toys.png', Books: 'icons/books.png', Clothes: 'icons/clothes.png' };
+const PINS = { 1: [60, 38], 2: [24, 26], 3: [44, 60], 4: [76, 20], 5: [28, 72], 6: [80, 54], 7: [16, 46], 8: [64, 80], 9: [42, 16] };
+const CATS = [['Bikes', '#3D4A1C'], ['Toys', '#F06A2A'], ['Books', '#7C6BEA'], ['Clothes', '#C9B84A']];
+
+class Component extends DCLogic {
+  state = { view: 'cards', pinId: null, ageAsk: false, underage: false, roleNote: false, screen: this.props.startScreen === 'discover' ? 'app' : 'onb', step: 0, ages: ['4–6', '7–9'], cats: ['Bikes', 'Toys'], delivery: 'volunteer', filter: 'All', tab: 'discover', seen: [], liked: [], history: [], dx: 0, dy: 0, drag: false, snap: false, toast: null };
+
+  componentDidMount() {
+    this.mv = e => { if (!this.state.drag || !this.start) return; this.setState({ dx: e.clientX - this.start.x, dy: (e.clientY - this.start.y) * 0.5 }); };
+    this.up = () => {
+      if (!this.state.drag) return;
+      const t = this.props.threshold ?? 100, dx = this.state.dx;
+      if (dx > t) this.decide(1); else if (dx < -t) this.decide(-1); else this.setState({ drag: false, dx: 0, dy: 0 });
+    };
+    window.addEventListener('pointermove', this.mv);
+    window.addEventListener('pointerup', this.up);
+    window.addEventListener('pointercancel', this.up);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('pointermove', this.mv);
+    window.removeEventListener('pointerup', this.up);
+    window.removeEventListener('pointercancel', this.up);
+    clearTimeout(this.tt); clearTimeout(this.ft);
+  }
+  deck() {
+    const f = this.state.filter;
+    return ITEMS.filter(i => (f === 'All' || i.cat === f) && !this.state.seen.includes(i.id));
+  }
+  decide(dir) {
+    const top = this.deck()[0];
+    if (!top || this.flying) return;
+    this.flying = true;
+    this.setState({ drag: false, dx: dir * 520, dy: this.state.dy + 30 });
+    this.ft = setTimeout(() => {
+      this.flying = false;
+      this.setState(s => ({
+        seen: [...s.seen, top.id],
+        liked: dir > 0 ? [top.id, ...s.liked] : s.liked,
+        history: [...s.history, { id: top.id, dir }],
+        dx: 0, dy: 0, snap: true,
+        toast: dir > 0 ? 'Request sent to ' + top.donor + '. We\'ll let you know when they reply.' : s.toast && null
+      }));
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ snap: false })));
+      clearTimeout(this.tt);
+      if (dir > 0) this.tt = setTimeout(() => this.setState({ toast: null }), 3200);
+    }, 260);
+  }
+  undo = () => {
+    const h = this.state.history; if (!h.length) return;
+    const last = h[h.length - 1];
+    clearTimeout(this.tt);
+    this.setState(s => ({ history: s.history.slice(0, -1), seen: s.seen.filter(i => i !== last.id), liked: s.liked.filter(i => i !== last.id), toast: null, filter: 'All', tab: 'discover' }));
+  };
+  toggle(key, v) { this.setState(s => ({ [key]: s[key].includes(v) ? s[key].filter(x => x !== v) : [...s[key], v] })); }
+
+  renderVals() {
+    const s = this.state, deck = this.deck(), on = '#3D4A1C';
+    const prog = Math.min(1, Math.abs(s.dx) / 160);
+    const tr = s.drag || s.snap ? 'none' : 'transform .28s cubic-bezier(.2,.7,.3,1)';
+    const cards = deck.slice(0, 4).map((it, i) => {
+      let tf;
+      if (i === 0) tf = `translate(${s.dx}px, ${s.dy}px) rotate(${s.dx / 18}deg)`;
+      else { const k = i - prog; tf = `translateY(${k * 6}px) scale(${1 - k * 0.035}) rotate(${(i % 2 ? -1 : 1) * Math.min(1, k) * 1.4}deg)`; }
+      return {
+        ...it, z: 10 - i, tf, tr, flt: i === 0 ? 'none' : `brightness(${1 - (i - prog) * 0.08})`, shadow: i === 0 ? '0 2px 0 rgba(0,0,0,.04),0 22px 40px -18px rgba(40,45,25,.55)' : '0 10px 24px -14px rgba(40,45,25,.4)',
+        yesOp: i === 0 ? Math.max(0, Math.min(1, s.dx / 90)) : 0,
+        noOp: i === 0 ? Math.max(0, Math.min(1, -s.dx / 90)) : 0,
+        onDown: i === 0 ? e => { if (this.flying) return; this.start = { x: e.clientX, y: e.clientY }; this.setState({ drag: true }); } : undefined
+      };
+    });
+    const mapItems = ITEMS.filter(i => s.filter === 'All' || i.cat === s.filter), pin = ITEMS.find(i => i.id === s.pinId && mapItems.includes(i));
+    const reqs = s.liked.map(id => ITEMS.find(i => i.id === id));
+    return {
+      isOnb0: s.screen === 'onb' && s.step === 0,
+      isOnb1: s.screen === 'onb' && s.step === 1,
+      isOnb2: s.screen === 'onb' && s.step === 2,
+      isCards: s.view === 'cards', isMap: s.view === 'map',
+      view: { cards: { bg: s.view === 'cards' ? '#FBFAF5' : 'transparent', pick: () => this.setState({ view: 'cards', pinId: null }) }, map: { bg: s.view === 'map' ? '#FBFAF5' : 'transparent', pick: () => this.setState({ view: 'map', toast: null }) } },
+      role: { need: () => this.setState({ ageAsk: true, underage: false, roleNote: false }), give: () => this.setState({ roleNote: true }), org: () => this.setState({ roleNote: true }) },
+      ageAsk: s.ageAsk, underage: s.underage, roleNote: s.roleNote,
+      ageYes: () => this.setState({ ageAsk: false, step: 2 }),
+      ageNo: () => this.setState({ underage: true }),
+      pins: mapItems.map(it => { const act = it.id === s.pinId, req = s.liked.includes(it.id); return { title: it.title, x: PINS[it.id][0] + '%', y: PINS[it.id][1] + '%', thumb: it.thumb, icon: CAT_ICON[it.cat], ring: req ? '#3D4A1C' : act ? '#F06A2A' : '#FBFAF5', sc: act ? 1.15 : 1, z: act ? 20 : 5, pick: e => { e.stopPropagation(); this.setState({ pinId: it.id }); } }; }),
+      mapCount: mapItems.length + ' things near you',
+      pinOn: !!pin,
+      pin: pin ? { ...pin, btnLabel: s.liked.includes(pin.id) ? 'Requested ✓' : 'Request', btnBg: s.liked.includes(pin.id) ? '#E3E0D1' : '#3D4A1C', btnFg: s.liked.includes(pin.id) ? '#3D4A1C' : '#F3F5DC', request: () => !s.liked.includes(pin.id) && this.setState(st => ({ liked: [pin.id, ...st.liked] })) } : {},
+      closePin: () => this.setState({ pinId: null }),
+      stop: e => e.stopPropagation(),
+      isApp: s.screen === 'app',
+      isDiscover: s.tab === 'discover',
+      isRequests: s.tab === 'requests',
+      showHints: this.props.showHints ?? true,
+      next: () => { const t = Date.now(); if (t - (this._nt || 0) < 450) return; this._nt = t; this.setState(st => st.step === 0 ? { step: 1 } : { screen: 'app', tab: 'discover' }); },
+      back: () => this.setState(st => ({ step: st.step === 2 ? 1 : 0, ageAsk: false, roleNote: false })),
+      restart: () => this.setState({ view: 'cards', pinId: null, ageAsk: false, underage: false, roleNote: false, screen: 'onb', step: 0, seen: [], liked: [], history: [], toast: null, filter: 'All', tab: 'discover' }),
+      ageChips: AGES.map(([a, h], i) => {
+        const act = s.ages.includes(a), baby = i === 0, r = baby ? 5.5 : 3.2 + h * 0.08, hy = 46 - h + r, top = hy + r + 1.5, L = baby ? 0 : h * 0.3, w = baby ? 15 : 7 + h * 0.14;
+        return { label: a, fig: act ? '#1F2414' : '#A3A592', hy, hr: r, bx: 15 - w / 2, by: top, bw: w, bh: Math.max(4, 46 - L - top + (L ? 1 : 0)), brx: baby ? 3.75 : 3, ly: 46 - L, lh: L, lw: baby ? 0 : 3.2, bg: act ? '#FBFAF5' : 'transparent', border: act ? '#1F2414' : '#D3D0BF', toggle: () => this.toggle('ages', a) };
+      }),
+      cat: Object.fromEntries(['Bikes', 'Toys', 'Books', 'Clothes'].map(c => { const act = s.cats.includes(c); return [c, { bg: act ? '#FBFAF5' : 'transparent', border: act ? '#1F2414' : '#D3D0BF', checkOp: act ? 1 : 0, toggle: () => this.toggle('cats', c) }]; })),
+      deliveryOpts: [['volunteer', 'Volunteer delivery', 'An ambassador brings it to your door or reception centre.'], ['pickup', 'I can pick it up', 'Meet the donor or collect at a partner hub near you.']].map(([k, title, sub]) => { const act = s.delivery === k; return { title, sub, bg: act ? '#FBFAF5' : 'transparent', border: act ? on : '#D9D6C6', dot: act ? on : 'transparent', pick: () => this.setState({ delivery: k }) }; }),
+      filterChips: ['All', 'Bikes', 'Toys', 'Books', 'Clothes'].map(f => { const act = s.filter === f; return { label: f, icon: CAT_ICON[f] || '', pl: CAT_ICON[f] ? '8px' : '14px', bg: act ? '#FBFAF5' : 'transparent', fg: '#1F2414', border: act ? '#1F2414' : '#C9C6B5', pick: () => this.setState({ filter: f, dx: 0, dy: 0, pinId: null }) }; }),
+      cards,
+      deckEmpty: deck.length === 0,
+      requestCountLabel: s.liked.length ? `You have ${s.liked.length} request${s.liked.length > 1 ? 's' : ''} waiting for a reply.` : 'Try another category or come back tomorrow.',
+      resetDeck: () => this.setState({ seen: s.seen.filter(id => s.liked.includes(id)), filter: 'All' }),
+      swipeYes: () => this.decide(1),
+      swipeNo: () => this.decide(-1),
+      undo: this.undo,
+      undoOp: s.history.length ? 1 : 0.4,
+      toastOn: !!s.toast && s.tab === 'discover',
+      toastText: s.toast,
+      requests: reqs,
+      noRequests: reqs.length === 0,
+      tab: Object.fromEntries(['discover', 'requests', 'events', 'profile'].map(k => { const act = s.tab === k; return [k, { fg: act ? '#1F2414' : '#8D907E', fill: act ? '#E4E8A8' : 'none', badge: k === 'requests' ? s.liked.length : '', badgeOp: k === 'requests' && s.liked.length ? 1 : 0, pick: () => (k === 'discover' || k === 'requests') && this.setState({ tab: k, toast: null }) }]; }))
+    };
+  }
+}
+</script>
+</body>
+</html>
